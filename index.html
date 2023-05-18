@@ -2,9 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="description" content="Benjamin Truong Personal Website">
+    <title>Benjamin Truong</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+
 </head>
 <body>
-    <h1>Benjamin and Miss Shell</h1>
+    <nav class="navigationBar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <button class="themeButton"></button>
+    </nav>
+
+
+
+
+
+
+    
+    <div id="home" class="home">
+
+        <h2>Software Developer</h2>
+        <p>
+            Hi. I'm Benjamin Truong. A passionate software developer based in Houston, Texas.
+        </p>
+        <img src="Pictures/TempPic.jpg" class="myImage" alt="Example Image">
+    </div>
+
+   
+
+
+
+
+
+
+    <div id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a computer science student who is passionate about coding and discovering new things in the world of technology. I enjoy experimenting with different coding languages and technologies. I am determined to continue honing my skills and expanding my knowledge base. I believe that by staying curious and pushing myself to learn more, I can unlock new opportunities and make a meaningful contribution to the world of technology.
+        </p>
+    </div>
+    
+
+    
+
+    <div class="socialLinks">
+        <a href="https://www.instagram.com/b.ngei/" target="_blank"><img class="instagramLogo" src="Pictures/Instagram Logo.png"/></a>
+        <a href="https://www.linkedin.com/in/benjamin-truong-164861186/" target="_blank"><img class="linkedinLogo" src="Pictures/LinkedIn Logo.png"/></a>
+        <a href="https://github.com/bngei" target="_blank"><img class="githubLogo" src="Pictures/Github Logo.png"/></a>
+        <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=benjamintruong2001@gmail.com&tf=1" target="_blank"><img class="gmailLogo" src="Pictures/Gmail Logo.png"/></a>
+    </div>
+
+
+
+
+
+    <div id="projects" class="projects">
+        <h2>Projects</h2>
+        <a href="https://bngeinumberguessinggame.netlify.app/" target="_blank">Number Guessing Game</a>
+    </div>
+
+
+
+
+
+    <div id="resume" class="resume">
+        <h2>Resume</h2>
+        <a href="Resume.pdf" target="_blank"><p>View My Resume ></p></a>
+    </div>
+
+
+
+
+
+    <script>
+        const body = document.querySelector('body');
+
+        const navigationBar = document.getElementsByClassName('navigationBar')[0];
+        const themeButton = document.getElementsByClassName('themeButton')[0];
+        const socialLinks = document.getElementsByClassName('socialLinks')[0];
+        const resume = document.getElementsByClassName('resume')[0];
+        
+        themeButton.onclick = function() {
+            themeButton.classList.toggle('darkMode');
+            body.classList.toggle('darkMode');
+            navigationBar.classList.toggle('darkMode');
+            socialLinks.classList.toggle('darkMode');
+            resume.classList.toggle('darkMode');
+        }
+    </script>
 </body>
 </html>
