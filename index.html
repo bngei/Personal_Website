@@ -5,21 +5,24 @@
     <meta name="description" content="Benjamin Truong Personal Website">
     <title>Benjamin Truong</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="script.js"></script>
     
 
 </head>
 <body>
-    <nav class="navigationBar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-        <button class="themeButton"></button>
-    </nav>
+    <div class="header">
+        <nav class="navigationBar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+            <button class="themeButton" onclick="changeTheme()">
+                <img class="themeImage" src="Pictures/Light_Mode.png" alt="Light Mode">
+            </button>
+        </nav>
+    </div>
 
 
 
@@ -66,7 +69,18 @@
 
     <div id="projects" class="projects">
         <h2>Projects</h2>
-        <a href="https://bngeinumberguessinggame.netlify.app/" target="_blank">Number Guessing Game</a>
+        <div class="projectContainer">
+            <a href="https://bngeinumberguessinggame.netlify.app/"target="_blank"><img class="numberGuessingGameLink" src="Pictures/Number_Guessing_Game_Image.png"/></a>
+            <p class="numberGuessingGameDescription">
+                A number guessing game made with HTML, CSS, and JavaScript.  
+            </p>
+
+            
+        </div>
+
+        <p>
+            Solved cancer.
+        </p>
     </div>
 
 
@@ -82,21 +96,6 @@
 
 
 
-    <script>
-        const body = document.querySelector('body');
-
-        const navigationBar = document.getElementsByClassName('navigationBar')[0];
-        const themeButton = document.getElementsByClassName('themeButton')[0];
-        const socialLinks = document.getElementsByClassName('socialLinks')[0];
-        const resume = document.getElementsByClassName('resume')[0];
-        
-        themeButton.onclick = function() {
-            themeButton.classList.toggle('darkMode');
-            body.classList.toggle('darkMode');
-            navigationBar.classList.toggle('darkMode');
-            socialLinks.classList.toggle('darkMode');
-            resume.classList.toggle('darkMode');
-        }
-    </script>
+    
 </body>
 </html>
