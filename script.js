@@ -12,5 +12,4 @@ function changeTheme () {
     navigationBar.classList.toggle('darkMode');
     socialLinks.classList.toggle('darkMode');
     resume.classList.toggle('darkMode');
-
 }
