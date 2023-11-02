@@ -10,6 +10,7 @@
     }
 }
 
+
 @keyframes slideInLeft {
     0% {
         transform: translateX(-500px);
@@ -20,6 +21,7 @@
         opacity: 1;
     }
 }
+
 
 @keyframes slideInRight {
     0% {
@@ -32,9 +34,11 @@
     }
 }
 
+
 body {
     animation: transitionIn 3s;
 }
+
 
 body.darkMode {
     background-color: #3c3836;
@@ -167,18 +171,17 @@ li {
     width: 50px;
 }
 
+
 .github_logo {
     border-radius: 10px;
     width: 50px;
 }
 
+
 .gmail_logo {
     border-radius: 10px;
     width: 50px;
 }
-
-
-
 
 
 .socialLinks {
@@ -188,6 +191,7 @@ li {
     display: flex;
     justify-content: center;
 }
+
   
 .socialLinks a {
     color: #333;
@@ -201,6 +205,7 @@ li {
     background-color: #fbf1c7;
 }
 
+
 .socialLinks.darkMode {
     align-items: center;
     background-color: #3c3836;
@@ -209,6 +214,7 @@ li {
     justify-content: center;
 }
   
+
 .socialLinks.darkMode a {
     color: #333;
     text-decoration: none;
@@ -220,8 +226,6 @@ li {
     margin: 15px;
     background-color: #3c3836;
 }
-
-
 
 
 .projects {
@@ -243,20 +247,24 @@ li {
     border-radius: 20px;
 }
 
+
 .projectContainer p {
     font-size: 20px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
+
 .projectContainer div {
     margin-bottom: 70px;
 }
+
 
 .firstProject {
     display: flex;
     justify-content: center;
     animation: slideInLeft 20s;
+    margin: 100px;
 }
 
 
@@ -264,8 +272,18 @@ li {
     display: flex;
     justify-content: center;
     animation: slideInRight 20s;
+    margin: 100px;
+
 }
 
+
+.thirdProject {
+    display: flex;
+    justify-content: center;
+    animation: slideInLeft 20s;
+    margin: 100px;
+
+}
 
 
 .resume {
@@ -274,6 +292,7 @@ li {
     animation: transitionIn 10s;
   }
   
+
 .resume h2 {
     font-size: 36px;
     font-weight: bold;
@@ -288,15 +307,18 @@ li {
     font-size: 24px;
 }
 
+
 .resume.darkMode {
     text-align: center;
     margin-top: 550px;
   }
+
   
 .resume.darkMove h2 {
     font-size: 36px;
     font-weight: bold;
 }
+
 
 .resume.darkMode a {
     display: block;
