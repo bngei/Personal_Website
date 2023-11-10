@@ -1,4 +1,4 @@
-/* @keyframes transitionIn {
+@keyframes transitionIn {
     from {
         opacity: 0;
         transform: rotateX(-10deg);
@@ -32,7 +32,7 @@
         transform: translateX(0);
         opacity: 1;
     }
-} */
+}
 
 
 body {
