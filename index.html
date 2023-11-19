@@ -2,66 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Benjamin Truong Personal Website">
     <title>Benjamin Truong</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
     <link rel="icon" href="Pictures/Ben.jpg" type="image/x-icon">
 </head>
 <body>
-    <div class="header">
-        <nav class="navigationBar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-            <button class="themeButton" onclick="changeTheme()">
-                <img class="themeImage" src="Pictures/Light_Mode.png" alt="Light Mode">
-            </button>
-        </nav>
-    </div>
+    <div id="portfolio">
+        <div id="info">
+            <div id="bio">
+                <h1>Benjamin Truong</h1>
+    
+                <div id="description">
+                    <p>Currently looking for careers in:</p>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Web Development</li>
+                        <li>Software Engineering</li>
+                        <li>Software Testing</li>
+                        <li>Automation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="resume">
+                <a href="Resume.pdf" id="resumepdf" target="_blank">My Resume</a>
+            </div>
+        
+    
+            <div id="social">
+                <a href="https://www.instagram.com/b.ngei/" target="_blank"><img class="logo" src="Pictures/instagram_logo.png"/></a>
+                <a href="https://www.linkedin.com/in/benjamin-truong-164861186/" target="_blank"><img class="logo" src="Pictures/linkedin_logo.png"/></a>
+                <a href="https://github.com/bngei" target="_blank"><img class="logo" src="Pictures/github_logo.png"/></a>
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=benjamintruong2001@gmail.com&tf=1" target="_blank"><img class="logo" src="Pictures/gmail_logo.png"/></a>    
+            </div>
+        </div>
 
     
-    <div id="resumeContainer">
-        <a href="Resume.pdf" class="resume" target="_blank"><p>View My Resume</p></a>
-    </div>
-
-
-    <div id="about">
-        <h2>About Me</h2>
-        <p>Connect with me!</p>
-        <div class="socialLinks">
-            <a href="https://www.instagram.com/b.ngei/" target="_blank"><img class="logo" src="Pictures/instagram_logo.png"/></a>
-            <a href="https://www.linkedin.com/in/benjamin-truong-164861186/" target="_blank"><img class="logo" src="Pictures/linkedin_logo.png"/></a>
-            <a href="https://github.com/bngei" target="_blank"><img class="logo" src="Pictures/github_logo.png"/></a>
-            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=benjamintruong2001@gmail.com&tf=1" target="_blank"><img class="logo" src="Pictures/gmail_logo.png"/></a>
-        </div>
-    </div>
-
-
-    <div id="projects">
-        <h2>Projects</h2>
-        <div class="projectContainer">
+        <div id="projects">
+            <h2>Projects</h2>
             <!-- FIRST PROJECT -->
-            <div class="firstProject">
-                <a href="https://bngeinumberguessinggame.netlify.app/" target="_blank"><img class="numberGuessingGameLink" src="Pictures/number_guessing_game.png"/></a>
-                <p>The "Number Guessing Game: Unique 4-Digit Challenge" is an interactive web-based game that tests players' logic and deduction skills. This project is built using HTML, CSS, and JavaScript, and it presents players with a unique 4-digit number puzzle. The challenge lies in determining the hidden number, which has four distinct digits, does not start with zero, and does not contain any repeating values.  </p>
+            <div class="project_box">
+                <h2>HealthCare Clinic Website</h2>
+                <div class="project_info">
+                    <a href="https://discount-clinic.azurewebsites.net/login.php" target="_blank"><img class="discountClinicLink" src="Pictures/discount_clinic.png"/></a>
+                    <p>The HealthCare Clinic Website is a comprehensive online platform designed to streamline the management of a medical clinic. It leverages HTML, CSS, PHP, JavaScript, and a MySQL database to enable users to create appointments, manage transactions, and implement user authorization for enhanced security and privacy. </p>
+                </div>
             </div>
 
-            
             <!-- SECOND PROJECT -->
-            <div class="secondProject">
-                <p>The HealthCare Clinic Website is a comprehensive online platform designed to streamline the management of a medical clinic. It leverages HTML, CSS, PHP, JavaScript, and a MySQL database to enable users to create appointments, manage transactions, and implement user authorization for enhanced security and privacy. </p>
-                <a href="https://discount-clinic.azurewebsites.net/login.php" target="_blank"><img class="discountClinicLink" src="Pictures/discount_clinic.png"/></a>
+            <div class="project_box">
+                <h2>Coding Simulator</h2>
+                <div class="project_info">
+                    <a href="https://codingsimulator.netlify.app/" target="_blank"><img class="codingSimulatorLink" src="Pictures/coding_simulator.png"/></a>
+                    <p>Coding Simulator is an engaging idle game built using HTML, JavaScript, and CSS that allows players to immerse themselves in the world of software development. In this game, players step into the shoes of a budding coder and embark on a journey to build a coding empire. The primary objective is to generate passive income by writing code and managing a virtual software development business.</p>
+                </div>
             </div>
-            
 
             <!-- THIRD PROJECT -->
-            <div class="thirdProject">
-                <a href="https://codingsimulator.netlify.app/" target="_blank"><img class="codingSimulatorLink" src="Pictures/coding_simulator.png"/></a>
-                <p>Coding Simulator is an engaging idle game built using HTML, JavaScript, and CSS that allows players to immerse themselves in the world of software development. In this game, players step into the shoes of a budding coder and embark on a journey to build a coding empire. The primary objective is to generate passive income by writing code and managing a virtual software development business.</p>
+            <div class="project_box">
+                <h2>Number Guessing Game</h2>
+                <div class="project_info">
+                    <a href="https://bngeinumberguessinggame.netlify.app/" target="_blank"><img class="numberGuessingGameLink" src="Pictures/number_guessing_game.png"/></a>
+                    <p>The "Number Guessing Game: Unique 4-Digit Challenge" is an interactive web-based game that tests players' logic and deduction skills. This project is built using HTML, CSS, and JavaScript, and it presents players with a unique 4-digit number puzzle. The challenge lies in determining the hidden number, which has four distinct digits, does not start with zero, and does not contain any repeating values.  </p>
+                </div>
             </div>
         </div>
     </div>
