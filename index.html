@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Benjamin Truong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Pictures/Ben.jpg" type="image/x-icon">
 </head>
@@ -10,25 +11,24 @@
     <div id="portfolio">
         <div id="info">
             <div id="bio">
-                <h1>Benjamin Truong</h1>
+                <h1 id="name">Benjamin Truong</h1>
     
                 <div id="description">
                     <p>Currently looking for careers in:</p>
                     <ul>
+                        <li>Software Engineering</li>
                         <li>Software Development</li>
                         <li>Web Development</li>
-                        <li>Software Engineering</li>
-                        <li>Software Testing</li>
-                        <li>Automation</li>
+                        <li>Quality Assurance Engineering</li>
+                        <li>Data Scientist</li>
                     </ul>
                 </div>
             </div>
 
             <div id="resume">
-                <a href="Resume.pdf" id="resumepdf" target="_blank">My Resume</a>
+                <a href="Resume.pdf" id="my_resume" target="_blank">My Resume</a>
             </div>
-        
-    
+            
             <div id="social">
                 <a href="https://www.instagram.com/b.ngei/" target="_blank"><img class="logo" src="Pictures/instagram_logo.png"/></a>
                 <a href="https://www.linkedin.com/in/benjamin-truong-164861186/" target="_blank"><img class="logo" src="Pictures/linkedin_logo.png"/></a>
@@ -39,17 +39,15 @@
 
     
         <div id="projects">
-            <h2>Projects</h2>
-            <!-- FIRST PROJECT -->
+            <h2 id="projects_text">Projects</h2>
             <div class="project_box">
                 <h2>HealthCare Clinic Website</h2>
                 <div class="project_info">
-                    <a href="https://discount-clinic.azurewebsites.net/login.php" target="_blank"><img class="discountClinicLink" src="Pictures/discount_clinic.png"/></a>
+                    <a href="https://discount-clinic.azurewebsites.net/index.html" target="_blank"><img class="discountClinicLink" src="Pictures/discount_clinic.png"/></a>
                     <p>The HealthCare Clinic Website is a comprehensive online platform designed to streamline the management of a medical clinic. It leverages HTML, CSS, PHP, JavaScript, and a MySQL database to enable users to create appointments, manage transactions, and implement user authorization for enhanced security and privacy. </p>
                 </div>
             </div>
 
-            <!-- SECOND PROJECT -->
             <div class="project_box">
                 <h2>Coding Simulator</h2>
                 <div class="project_info">
@@ -58,12 +56,19 @@
                 </div>
             </div>
 
-            <!-- THIRD PROJECT -->
             <div class="project_box">
                 <h2>Number Guessing Game</h2>
                 <div class="project_info">
                     <a href="https://bngeinumberguessinggame.netlify.app/" target="_blank"><img class="numberGuessingGameLink" src="Pictures/number_guessing_game.png"/></a>
                     <p>The "Number Guessing Game: Unique 4-Digit Challenge" is an interactive web-based game that tests players' logic and deduction skills. This project is built using HTML, CSS, and JavaScript, and it presents players with a unique 4-digit number puzzle. The challenge lies in determining the hidden number, which has four distinct digits, does not start with zero, and does not contain any repeating values.  </p>
+                </div>
+            </div>
+
+            <div class="project_box">
+                <h2>Artificial Intelligence Reinforced Learning Project</h2>
+                <div class="project_info">
+                    <a href="https://github.com/bngei/AI_Reinforced_Learning" target="_blank"><img class="discountClinicLink" src="Pictures/ai_project.png"/></a>
+                    <p>This AI project involves coordinating two agents to transport blocks from pickup to dropoff cells. It explores two reinforcement learning approaches: individual strategies for each agent considering the other's position and a joint strategy moving both agents together. Strategies employ policies like random, exploit, and greedy actions, aiming to optimize block transportation while addressing constraints like alternate moves and blockage avoidance.</p>
                 </div>
             </div>
         </div>
