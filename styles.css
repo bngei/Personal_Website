@@ -10,7 +10,6 @@
     }
 }
 
-
 @keyframes slideInLeft {
     0% {
         transform: translateX(-500px);
@@ -22,7 +21,6 @@
     }
 }
 
-
 @keyframes slideInRight {
     0% {
         transform: translateX(500px);
@@ -33,7 +31,6 @@
         opacity: 1;
     }
 }
-
 
 body {
     animation: transitionIn 3s;
@@ -55,7 +52,6 @@ body {
     color: rgb(255 255 255/var(--tw-text-opacity));
     margin: 4vw;
     width: 40vw;
-    /* position: fixed; */
 }
 
 #name {
@@ -89,6 +85,8 @@ body {
 }
 
 #my_resume {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
     letter-spacing: 1vw;
     text-transform: uppercase;
     font-size: 1.8vw;
@@ -167,7 +165,7 @@ body {
 /* For any screen smaller than 990px */
 @media screen and (max-width: 990px) {
     body {
-        /* animation: transitionIn 3s; */
+        animation: transitionIn 3s;
         --tw-bg-opacity: 1;
         background-color: rgb(21 21 21/var(--tw-bg-opacity));
         font-family: Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
@@ -179,9 +177,6 @@ body {
     }
     #info {
         width: 100%;
-    }
-    #bio {
-    
     }
     #name {
         font-size: 9vw;
@@ -197,9 +192,15 @@ body {
         margin: 7vw;
     }
     #my_resume {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255/var(--tw-text-opacity));
         letter-spacing: 2vw;
         font-size: 4vw;   
     }
+    #my_resume::visted {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255/var(--tw-text-opacity));
+    }  
     #social img {
         width: 10vw;
         margin: 2vw;
